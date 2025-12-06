@@ -1,0 +1,135 @@
+/* ---------- THEME VARIABLES ---------- */
+:root {
+    --bg: #111;
+    --text: #f5f5f5;
+    --chat-bg: #1e1e1e;
+    --box-bg: #0d0d0d;
+    --border: #333;
+    --user-msg: #0059ff;
+    --bot-msg: #333;
+    --btn-bg: #00eaff;
+    --btn-hover: #00bcd4;
+}
+
+.light-theme {
+    --bg: #f9f9f9;
+    --text: #000;
+    --chat-bg: #ffffff;
+    --box-bg: #efefef;
+    --border: #ccc;
+    --user-msg: #007bff;
+    --bot-msg: #ddd;
+    --btn-bg: #008cff;
+    --btn-hover: #006fd3;
+}
+
+/* ---------- MAIN PAGE STYLING ---------- */
+body {
+    background: var(--bg);
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.chat-container {
+    width: 40%;
+    margin: 60px auto;
+    background: var(--chat-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #000;
+    transition: 0.3s;
+}
+
+h2 {
+    text-align: center;
+    color: var(--btn-bg);
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    padding: 10px;
+    background: var(--box-bg);
+    border-radius: 8px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    clear: both;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user {
+    background: var(--user-msg);
+    color: #fff;
+    float: right;
+}
+
+.bot {
+    background: var(--bot-msg);
+    color: #fff;
+    float: left;
+}
+
+/* Typing message */
+#typing {
+    color: var(--btn-bg);
+    font-style: italic;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Input Section */
+.input-area {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    width: 75%;
+    padding: 10px;
+    background: var(--box-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--btn-bg);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--btn-hover);
+}
+
+/* Theme switch */
+.theme-toggle {
+    float: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    background: none;
+    border: 1px solid var(--btn-bg);
+    color: var(--btn-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background: var(--btn-bg);
+    color: #000;
+}
